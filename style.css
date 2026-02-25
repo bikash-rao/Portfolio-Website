@@ -207,6 +207,7 @@ a, a:hover { text-decoration: none; }
 
 /*ABOUT*/
 
+
 .about-content .about-title { font-size: 22px; font-weight: 600; text-transform: capitalize; padding-bottom: 15px; }
     .about-content .about-title span { color: var(--main-color); }
 .about-content p {
@@ -224,7 +225,7 @@ a, a:hover { text-decoration: none; }
 .about-content .single-info .info-text { padding-left: 15px; }
     .about-content .single-info .info-text p span { color: var(--black900); font-weight: 500; } 
     
-.hire-me {
+/* .hire-me {
     background-color: var(--main-color);
     padding: 10px 20px;
     margin-top: 20px;
@@ -237,7 +238,7 @@ a, a:hover { text-decoration: none; }
     box-shadow: var(--shadow-black300);
     font-weight: 500;
     transition: all .5s ease;
-}
+} */
 
     .hire-me:hover { background-color: var(--white); color: var(--main-color); }
 
@@ -254,6 +255,141 @@ a, a:hover { text-decoration: none; }
 }
 
 .skills { height: 6px; width: 0; background-color: var(--main-color); }
+
+
+/* Skills scroll */
+.abc {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+.abc h4 {
+  margin-left: 2rem;
+  margin: 0;
+  text-align: center;
+  color: #2271b1;
+  font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+.abc .container-skills {
+  position: relative;
+  overflow-x: hidden;
+  height: 60px;
+}
+.abc .container-skills .logo__skills {
+  position: absolute;
+  width: 2000px;      /*4500*/
+  left: -100px;
+}
+.abc .container-skills .logo__skills img {
+  position: absolute;
+  right: 0;
+  animation-name: scroll;
+  animation-duration: 17s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.abc .container-skills .logo__skills img:nth-child(0) {
+  animation-delay: 0s;
+}
+.abc .container-skills .logo__skills img:nth-child(1) {
+  animation-delay: -1s;
+}
+.abc .container-skills .logo__skills img:nth-child(2) {
+  animation-delay: -2s;
+}
+.abc .container-skills .logo__skills img:nth-child(3) {
+  animation-delay: -3s;
+}
+.abc .container-skills .logo__skills img:nth-child(4) {
+  animation-delay: -4s;
+}
+.abc .container-skills .logo__skills img:nth-child(5) {
+  animation-delay: -5s;
+}
+.abc .container-skills .logo__skills img:nth-child(6) {
+  animation-delay: -6s;
+}
+.abc .container-skills .logo__skills img:nth-child(7) {
+  animation-delay: -7s;
+}
+.abc .container-skills .logo__skills img:nth-child(8) {
+  animation-delay: -8s;
+}
+.abc .container-skills .logo__skills img:nth-child(9) {
+  animation-delay: -9s;
+}
+.abc .container-skills .logo__skills img:nth-child(10) {
+  animation-delay: -10s;
+}
+.abc .container-skills .logo__skills img:nth-child(11) {
+  animation-delay: -11s;
+}
+.abc .container-skills .logo__skills img:nth-child(12) {
+  animation-delay: -12s;
+}
+.abc .container-skills .logo__skills img:nth-child(13) {
+  animation-delay: -13s;
+}
+.abc .container-skills .logo__skills img:nth-child(14) {
+  animation-delay: -14s;
+}
+.abc .container-skills .logo__skills img:nth-child(15) {
+  animation-delay: -15s;
+}
+.abc .container-skills .logo__skills img:nth-child(16) {
+  animation-delay: -16s;
+}
+.abc .container-skills .logo__skills img:nth-child(17) {
+  animation-delay: -17s;
+}
+/* .abc .container-skills .logo__skills img:nth-child(18) {
+  animation-delay: -18s;
+}
+.abc .container-skills .logo__skills img:nth-child(19) {
+  animation-delay: -19s;
+}
+.abc .container-skills .logo__skills img:nth-child(20) {
+  animation-delay: -20s;
+}
+.abc .container-skills .logo__skills img:nth-child(21) {
+  animation-delay: -42s;
+}
+.abc .container-skills .logo__skills img:nth-child(22) {
+  animation-delay: -44s;
+}
+.abc .container-skills .logo__skills img:nth-child(23) {
+  animation-delay: -46s;
+}
+.abc .container-skills .logo__skills img:nth-child(24) {
+  animation-delay: -48s;
+}
+.abc .container-skills .logo__skills img:nth-child(25) {
+  animation-delay: -50s;
+}
+.abc .container-skills .logo__skills img:nth-child(26) {
+  animation-delay: -52s;
+}
+.abc .container-skills .logo__skills img:nth-child(27) {
+  animation-delay: -54s;
+} */
+
+@keyframes scroll {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+/* Skills scroll end */
+
+
+
 
 /*SERVICES*/
 
@@ -447,8 +583,8 @@ a, a:hover { text-decoration: none; }
 .call-action-content p { color: var(--white); padding-bottom: 25px; }
 .call-action-content ul li { display: inline-block; margin: 10px 15px 0;}
 
-TESTIMONIALS
-/* 
+/* TESTIMONIALS */
+
 .testimonials { background-color: var(--black100); }
 
 .testimonial-item {
@@ -508,10 +644,10 @@ TESTIMONIALS
     }
 
     .testimonial-item .rating { margin-top: 10px; }
-        .testimonial-item .rating i { display: inline-block; font-size: 16px; color: rgb(255, 157, 0); } */
+        .testimonial-item .rating i { display: inline-block; font-size: 16px; color: rgb(255, 157, 0); }
 
-PRICING
-/* 
+/* PRICING */
+
 .pricing-plan { box-shadow: var(--shadow-black100); border-radius: 10px; }
     .pricing-plan .pricing-header { padding: 20px 30px; background-color: var(--main-color); }
         .pricing-plan .pricing-header h3 {
@@ -602,11 +738,12 @@ PRICING
         color: var(--black400);
         line-height: 26px;
         margin: 0;
-    } */
+    }
 
 /*CONTACT*/
 
 .contact { background-color: var(--shadow-black100); }
+/* .contact { background-color: var(--black100); } */
 .contact-info h3 { font-size: 22px; color: var(--black900); font-weight: 500; margin: 0 0 40px; }
 .contact-info-item { position: relative; padding-left: 55px; margin-bottom: 30px; }
     .contact-info-item i {
