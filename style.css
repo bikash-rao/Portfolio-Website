@@ -225,7 +225,7 @@ a, a:hover { text-decoration: none; }
 .about-content .single-info .info-text { padding-left: 15px; }
     .about-content .single-info .info-text p span { color: var(--black900); font-weight: 500; } 
     
-/* .hire-me {
+.hire-me {
     background-color: var(--main-color);
     padding: 10px 20px;
     margin-top: 20px;
@@ -238,7 +238,7 @@ a, a:hover { text-decoration: none; }
     box-shadow: var(--shadow-black300);
     font-weight: 500;
     transition: all .5s ease;
-} */
+}
 
     .hire-me:hover { background-color: var(--white); color: var(--main-color); }
 
@@ -288,7 +288,7 @@ a, a:hover { text-decoration: none; }
   position: absolute;
   right: 0;
   animation-name: scroll;
-  animation-duration: 17s;
+  animation-duration: 14s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -337,7 +337,7 @@ a, a:hover { text-decoration: none; }
 .abc .container-skills .logo__skills img:nth-child(14) {
   animation-delay: -14s;
 }
-.abc .container-skills .logo__skills img:nth-child(15) {
+/* .abc .container-skills .logo__skills img:nth-child(15) {
   animation-delay: -15s;
 }
 .abc .container-skills .logo__skills img:nth-child(16) {
@@ -345,7 +345,7 @@ a, a:hover { text-decoration: none; }
 }
 .abc .container-skills .logo__skills img:nth-child(17) {
   animation-delay: -17s;
-}
+} */
 /* .abc .container-skills .logo__skills img:nth-child(18) {
   animation-delay: -18s;
 }
@@ -796,6 +796,172 @@ a, a:hover { text-decoration: none; }
         font-weight: 300;
         margin: 10px 0 0;
     }
+
+
+
+/* work */
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600'); */
+.work{
+  padding:0;
+  margin-top:100px;
+  /* font-family: 'Montserrat', sans-serif; */
+}
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1300px;
+  box-sizing:border-box;
+  margin-top: -90px;
+  /* margin-bottom: -200px; */
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:97%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  /* background:rgba(233,33,99,1); */
+  background: var(--main-color);
+  border-radius:50%;
+  box-shadow:0 0 0 3px rgba(85, 133, 203, 0.3);
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  /* background:rgba(233,33,99,1); */
+  background: var(--main-color);
+  border-radius:50%;
+  /* box-shadow:0 0 0 3px rgba(233,33,99,0.2); */
+  box-shadow: var(--main-color);
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  /* color:rgba(233,33,99,1); */
+  color: var(--main-color);
+  font-weight:600;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+  /* background:rgba(233,33,99,1); */
+  background: var(--main-color);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(85, 133, 203, 0.3);
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  /* background:rgba(233,33,99,1); */
+  background: var(--main-color);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(85, 133, 203, 0.3);
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+    padding-top: 100px;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}
+
+
+
+
 
 /*MEDIA QUERIES*/
 
